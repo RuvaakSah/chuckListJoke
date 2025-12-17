@@ -28,4 +28,41 @@ button:hover {
 }
 
 
+/* Agrega estos estilos a tu archivo styles.css */
 
+#jokeList {
+    list-style: none;
+    padding: 0;
+    width: 90%; /* Ancho máximo para la lista */
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.joke-item {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el texto y el botón */
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.joke-text {
+    flex-grow: 1;
+    margin-right: 15px; /* Espacio entre texto y botón */
+}
+
+.delete-button {
+    /* Estilos específicos para el botón de eliminar */
+    background-color: #dc3545;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-top: 0; /* Anula el margin-top del estilo general de button */
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
